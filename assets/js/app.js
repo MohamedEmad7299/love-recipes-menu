@@ -2002,8 +2002,8 @@ function renderFoodCard(item) {
 
   return `
     <div class="food-card" id="card_${item.id}">
-      ${badgeHTML}
       <div class="food-card-header">
+        ${badgeHTML ? `<div class="food-card-badge-wrap">${badgeHTML}</div>` : ""}
         <h3 class="food-card-title">${name}</h3>
         <p class="food-card-desc">${desc || ""}</p>
         ${optionsHTML}

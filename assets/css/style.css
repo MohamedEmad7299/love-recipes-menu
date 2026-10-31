@@ -691,40 +691,51 @@ html[dir="ltr"] .category-header::after {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(233, 30, 99, 0.15);
 }
 
-.card-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  z-index: 2;
-  letter-spacing: 0.5px;
+/* Top Badge Wrap & Badges - Natural In-Flow, Zero Overlap */
+.food-card-badge-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
 }
 
-html[dir="ltr"] .card-badge {
-  left: auto;
-  right: 12px;
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.2;
+  position: static !important;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.3px;
 }
 
 .card-badge.popular {
-  background: rgba(255, 179, 0, 0.2);
+  background: rgba(255, 179, 0, 0.18);
   color: #ffca28;
-  border: 1px solid rgba(255, 179, 0, 0.4);
+  border: 1px solid rgba(255, 179, 0, 0.45);
 }
 
 .card-badge.special {
-  background: rgba(233, 30, 99, 0.2);
+  background: rgba(233, 30, 99, 0.18);
   color: #ff4081;
-  border: 1px solid rgba(233, 30, 99, 0.4);
+  border: 1px solid rgba(233, 30, 99, 0.45);
 }
 
 .card-badge.new {
-  background: rgba(124, 179, 66, 0.2);
+  background: rgba(124, 179, 66, 0.18);
   color: #9ccc65;
-  border: 1px solid rgba(124, 179, 66, 0.4);
+  border: 1px solid rgba(124, 179, 66, 0.45);
+}
+
+.card-badge.signature {
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.22), rgba(255, 179, 0, 0.22));
+  color: #ffd54f;
+  border: 1px solid rgba(255, 213, 79, 0.45);
 }
 
 .food-card-header {
