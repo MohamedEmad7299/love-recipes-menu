@@ -217,27 +217,14 @@ const BRANCHES_DATA = [
     id: "october_hosary",
     nameAr: "فرع 6 أكتوبر - ميدان الحصري (عمارة 40)",
     nameEn: "6th of October - Al-Hosary Square (Bldg 40)",
-    addressAr: "ميدان الحصري - بجوار ماكدونالدز - عمارة 40 - مدينة 6 أكتوبر",
-    addressEn: "Al-Hosary Square, Next to McDonald's, Building 40, 6th of October City",
+    addressAr: "ميدان الحصري - بجوار ماكدونالدز - عمارة 40 (صالة، تيك أواي، وتوصيل سريع لكافة أحياء 6 أكتوبر والشيخ زايد وحدائق الأهرام)",
+    addressEn: "Al-Hosary Square, Next to McDonald's, Bldg 40 (Dine-in, Takeaway & Fast Delivery to 6th of October, Sheikh Zayed & Hadayek Al Ahram)",
     phone: "01032638741",
     whatsapp: "01032638741",
     hoursAr: "يومياً من 11:00 صباحاً حتى 02:00 فجراً",
     hoursEn: "Daily 11:00 AM - 02:00 AM",
     mapsUrl: "https://maps.google.com/?q=Al+Hosary+Square+6th+October",
     isMain: true
-  },
-  {
-    id: "delivery_zayed_october",
-    nameAr: "خدمة التوصيل السريع (أكتوبر والشيخ زايد وحدائق الأهرام)",
-    nameEn: "Fast Delivery Zone (October, Zayed & Hadayek)",
-    addressAr: "توصيل سريع مجهز ومبرد لجميع أحياء 6 أكتوبر، الشيخ زايد، وحدائق الأهرام",
-    addressEn: "Chilled & insulated fast delivery covering 6th of October, Sheikh Zayed & Hadayek Al Ahram",
-    phone: "01032638741",
-    whatsapp: "01032638741",
-    hoursAr: "خدمة التوصيل من 11:00 صباحاً حتى 02:00 فجراً",
-    hoursEn: "Delivery Service 11:00 AM - 02:00 AM",
-    mapsUrl: "https://maps.google.com/?q=6th+of+October+City",
-    isMain: false
   }
 ];
 

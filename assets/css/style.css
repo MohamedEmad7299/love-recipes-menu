@@ -878,6 +878,8 @@ html[dir="ltr"] .category-header::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .branch-card {
