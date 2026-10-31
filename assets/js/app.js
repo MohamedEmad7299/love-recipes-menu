@@ -1787,6 +1787,8 @@ function applyLanguage(lang) {
     if (I18N[lang] && I18N[lang][key]) {
       if (el.tagName === "INPUT" && el.hasAttribute("placeholder")) {
         el.placeholder = I18N[lang][key];
+      } else if (el.getAttribute("data-i18n-html") === "true" || I18N[lang][key].includes("<") || I18N[lang][key].includes("&")) {
+        el.innerHTML = I18N[lang][key];
       } else {
         el.textContent = I18N[lang][key];
       }

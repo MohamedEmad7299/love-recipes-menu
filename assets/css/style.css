@@ -1480,10 +1480,21 @@ html[dir="ltr"] .branch-search-input {
   font-weight: 900;
   margin-bottom: 0.65rem;
   color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  direction: ltr;
+  unicode-bidi: isolate;
 }
 
 .footer-brand h2 span {
   color: var(--lr-pink-light);
+  background: rgba(233, 30, 99, 0.15);
+  border: 1px solid rgba(233, 30, 99, 0.35);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
 }
 
 .footer-about {
