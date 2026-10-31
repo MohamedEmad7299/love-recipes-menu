@@ -226,6 +226,8 @@ img {
   display: flex;
   align-items: center;
   gap: 0.35rem;
+  direction: ltr !important;
+  unicode-bidi: isolate;
 }
 
 .brand-text h1 .brand-highlight {
@@ -1662,6 +1664,8 @@ html[dir="ltr"] .branch-search-input {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     line-height: 1.2;
+    direction: ltr !important;
+    unicode-bidi: isolate;
   }
 
   /* Hide slogan, subtitle, stars in mobile header */
