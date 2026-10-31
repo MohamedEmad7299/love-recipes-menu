@@ -43,7 +43,6 @@ const I18N = {
     complaintsLabel: "للشكاوى والمقترحات:",
     ctaMenu: "تصفح المنيو اللذيذ",
     ctaBranches: "الفروع ومناطق التوصيل",
-    ctaFlyer: "عرض البروشور والمنيو الأصلي (15 صفحة)",
     searchPlaceholder: "ابحث في الصنداي، البوبا، كريب البراونيز، كيكة دبي، القشطوطة، الميلك شيك...",
     tabAll: "الكل ✨",
     tabSundae: "آيس كريم صنداي 🍨",
@@ -82,7 +81,7 @@ const I18N = {
     orderTypeLabel: "طريقة الاستلام:",
     orderTypeDelivery: "توصيل للمنزل / دليفري 🛵",
     orderTypePickup: "استلام من المطعم (تيك أواي) 🛍️",
-    orderTypeDineIn: "تناول داخل الصالة (ترابيزة) 🍨",
+    orderTypeDineIn: "تناول داخل الصالة (خدمة 12%) 🍨",
     customerName: "الاسم الكريم:",
     customerPhone: "رقم الموبايل للتواصل:",
     customerBranch: "اختر الفرع أو منطقة التوصيل:",
@@ -104,13 +103,6 @@ const I18N = {
     downloadQR: "تحميل صورة QR",
     copyLink: "نسخ رابط المنيو",
     copiedAlert: "تم نسخ رابط منيو Love Recipes بنجاح!",
-    flyerModalTitle: "منيو وبروشور Love Recipes الأصلي المطبوع (15 صفحة)",
-    flyerTabAll: "جميع الصفحات (15 صفحة)",
-    flyerTabIceCream: "الآيس كريم والصنداي والتشيز كيك",
-    flyerTabBoba: "البوبا والفرابيه والماتشا",
-    flyerTabCrepeCake: "الكريب، البراونيز، كيكة دبي، والقشطوطة",
-    flyerTabDrinks: "الميلك شيك، العصائر، والساخن",
-    flyerTabCover: "الغلاف وأرقام التواصل والفرع",
     footerAbout: "Love Recipes (LR) - وجهتك الأولى لأشهى الحلويات الغربية، آيس كريم الصنداي الفاخر، مشروبات البوبا الطبيعية، كريب البراونيز وفوتوتشيني، كيكة دبي بالكنافة المقرمشة والديسباسيتو المصنوع بكل حب.",
     footerBrandTitle: "Love Recipes <span>LR</span> 💖",
     footerCopyright: "&copy; 2026 Love Recipes (LR) - جميع الحقوق محفوظة",
@@ -121,7 +113,10 @@ const I18N = {
     featuredBranchBadge: "الفرع الرئيسي",
     itemsCountSuffix: "أصناف",
     clearCart: "تفريغ السلة",
-    serviceNotice: "⭐ جميع الأصناف تحضر طازجة من مكونات طبيعية 100% - أسعار شاملة ضريبة القيمة المضافة."
+    subtotalLabel: "المجموع الفرعي:",
+    hallServiceLabel: "خدمة الصالة (12%):",
+    finalTotalLabel: "الإجمالي النهائي:",
+    serviceNotice: "⭐ يضاف 12% خدمة داخل الصالة - جميع الأسعار شاملة ضريبة القيمة المضافة."
   },
   en: {
     brandName: "Love Recipes",
@@ -139,7 +134,6 @@ const I18N = {
     complaintsLabel: "Customer Care & Complaints:",
     ctaMenu: "Explore Delicious Menu",
     ctaBranches: "Branches & Delivery",
-    ctaFlyer: "View Original Flyer (15 Pages)",
     searchPlaceholder: "Search sundaes, boba, brownie crepes, dubai cake, qashtoota, milkshakes...",
     tabAll: "All ✨",
     tabSundae: "Ice Cream Sundae 🍨",
@@ -178,7 +172,7 @@ const I18N = {
     orderTypeLabel: "Fulfillment Type:",
     orderTypeDelivery: "Home Delivery 🛵",
     orderTypePickup: "Store Pickup (Takeaway) 🛍️",
-    orderTypeDineIn: "Dine-in (Table Service) 🍨",
+    orderTypeDineIn: "Dine-in (12% Service) 🍨",
     customerName: "Your Full Name:",
     customerPhone: "Phone / Mobile Number:",
     customerBranch: "Select Branch / Delivery Area:",
@@ -200,13 +194,6 @@ const I18N = {
     downloadQR: "Download QR Image",
     copyLink: "Copy Menu URL",
     copiedAlert: "Love Recipes menu URL copied successfully!",
-    flyerModalTitle: "Love Recipes Original Printed Menu & Scans (15 Pages)",
-    flyerTabAll: "All Pages (15 Pages)",
-    flyerTabIceCream: "Ice Cream, Sundae & Cheesecakes",
-    flyerTabBoba: "Boba Drinks, Frappes & Matcha",
-    flyerTabCrepeCake: "Crepes, Brownies, Dubai Cake & Qashtoota",
-    flyerTabDrinks: "Milkshakes, Smoothies & Hot Drinks",
-    flyerTabCover: "Cover, Hotline & Branch Location",
     footerAbout: "Love Recipes (LR) - Your top destination for artisanal desserts, gourmet sundae ice cream, chewy boba drinks, brownie crepes, crispy Dubai kunafa cake, and heavenly despacito made with pure love.",
     footerBrandTitle: "Love Recipes <span>LR</span> 💖",
     footerCopyright: "&copy; 2026 Love Recipes (LR) - All Rights Reserved",
@@ -217,28 +204,12 @@ const I18N = {
     featuredBranchBadge: "Main Branch",
     itemsCountSuffix: "items",
     clearCart: "Clear Cart",
-    serviceNotice: "⭐ All items are freshly made using 100% natural ingredients - All prices include VAT."
+    subtotalLabel: "Subtotal:",
+    hallServiceLabel: "Hall Service (12%):",
+    finalTotalLabel: "Final Total:",
+    serviceNotice: "⭐ 12% Dine-in / Hall service charge applies - All prices are VAT inclusive."
   }
 };
-
-// Original Printed Flyer Pages & Scans (15 Images)
-const FLYER_PAGES = [
-  { id: 1, src: "./assets/images/1.jpg", cat: "cover", titleAr: "غلاف Love Recipes، صنداي الآيس كريم، تشيز كيك، والفرع 6 أكتوبر", titleEn: "Cover, Sundae, Cheesecake, Hotline & 6th October Address" },
-  { id: 2, src: "./assets/images/2.jpg", cat: "drinks", titleAr: "المشروبات الساخنة، براونيز بايتس، طاجن، سموزي، ميلك شيك، فرابتشينو، أيس كوفي ومخيتو", titleEn: "Hot Drinks, Brownies Bites, Tajen, Smoothies, Milkshakes, Frappuccinos & Mojitos" },
-  { id: 3, src: "./assets/images/Screenshot 2026-10-31 194742.png", cat: "icecream", titleAr: "منيو آيس كريم صنداي (فانيليا، كراميل، فراولة، توت، لوتس، نوتيلا، كيندر)", titleEn: "Sundae Menu (Vanilla, Caramel, Strawberry, Berry, Lotus, Nutella, Kinder)" },
-  { id: 4, src: "./assets/images/Screenshot 2026-10-31 194800.png", cat: "boba", titleAr: "مشروبات البوبا المميزة (كراميل، بلوبيري، شيكولاتة، شاي بالحليب، فانيليا، فراولة)", titleEn: "Boba Drinks (Caramel, Blueberry, Chocolate, Boba Tea, Vanilla, Strawberry)" },
-  { id: 5, src: "./assets/images/Screenshot 2026-10-31 194816.png", cat: "boba", titleAr: "مشروبات البوبا الخاصة (كيندر، بستاشيو، كراميل فرابيه، لوتس، ماتشا، نوتيلا)", titleEn: "Special Boba (Kinder, Pistachio, Caramel Frappe, Lotus, Matcha, Nutella)" },
-  { id: 6, src: "./assets/images/Screenshot 2026-10-31 194823.png", cat: "boba", titleAr: "أيس كوفي وماتشا (فانيليا، كراميل، وايت موكا، لاتيه، موكا، ماتشا لاتيه، أمريكانو)", titleEn: "Iced Coffee & Matcha Latte Selections" },
-  { id: 7, src: "./assets/images/Screenshot 2026-10-31 194831.png", cat: "crepecake", titleAr: "براوني كريب (لوتس، نوتيلا، بستاشيو، كيندر، وهاف آند هاف)", titleEn: "Brownie Crepe (Lotus, Nutella, Pistachio, Kinder, Half & Half)" },
-  { id: 8, src: "./assets/images/Screenshot 2026-10-31 194838.png", cat: "crepecake", titleAr: "فوتوتشيني كريب (لوتس، نوتيلا، بستاشيو، وكيندر مع الآيس كريم)", titleEn: "Fettuccine Crepe Slices with Sauces & Ice Cream" },
-  { id: 9, src: "./assets/images/Screenshot 2026-10-31 194909.png", cat: "crepecake", titleAr: "كيكة دبي بالكنافة المقرمشة والفرابيه (بستاشيو، نوتيلا، لوتس، كيندر)", titleEn: "Dubai Pistachio & Kunafa Cakes, and Frappes" },
-  { id: 10, src: "./assets/images/Screenshot 2026-10-31 194918.png", cat: "drinks", titleAr: "فرابيه وميلك شيك (أوريو، نوتيلا، لوتس، بستاشيو، وفراولة)", titleEn: "Frappe & Milkshake Specials (Oreo, Nutella, Lotus, Pistachio)" },
-  { id: 11, src: "./assets/images/Screenshot 2026-10-31 194924.png", cat: "drinks", titleAr: "ميلك شيك كراميل وشيكولاتة وبيري، وبداية قسم القشطوطة", titleEn: "Milkshake Varieties & Pistachio / Kinder Qashtoota" },
-  { id: 12, src: "./assets/images/Screenshot 2026-10-31 194930.png", cat: "crepecake", titleAr: "تشكيلة القشطوطة (كراميل، نوتيلا، لوتس، سادة، مانجو، شوكولاتة، وأوريو)", titleEn: "Qashtoota Assortment (Caramel, Nutella, Lotus, Plain, Mango, Chocolate, Oreo)" },
-  { id: 13, src: "./assets/images/Screenshot 2026-10-31 194936.png", cat: "crepecake", titleAr: "ديسباسيتو كيك (شوكولاتة، كراميل، أوريو، نوتيلا، لوتس، وكيندر)", titleEn: "Despacito Cakes (Chocolate, Caramel, Oreo, Nutella, Lotus, Kinder)" },
-  { id: 14, src: "./assets/images/Screenshot 2026-10-31 194953.png", cat: "crepecake", titleAr: "براونيز كيك بالكريمة وطواجن السعادة مع الآيس كريم", titleEn: "Brownies with Cream & Happiness Tajens with Ice Cream" },
-  { id: 15, src: "./assets/images/Screenshot 2026-10-31 195009.png", cat: "cover", titleAr: "فهرس وأقسام منيو Love Recipes الإلكتروني", titleEn: "Love Recipes Categories Overview" }
-];
 
 // Branches Directory & WhatsApp Order Dispatch
 const BRANCHES_DATA = [
@@ -1699,8 +1670,6 @@ let currentCategory = "all";
 let currentSearchQuery = "";
 let cart = JSON.parse(localStorage.getItem("lr_menu_cart") || "[]");
 let selectedBranch = BRANCHES_DATA[0];
-let currentFlyerPage = 0;
-let currentFlyerCat = "all";
 let qrCodeInstance = null;
 
 // Initialize Application on DOM Ready
@@ -1713,7 +1682,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBranchRadioList();
   updateCartUI();
   initQR();
-  initFlyerLightbox();
   checkTableInURL();
 });
 
@@ -1782,18 +1750,10 @@ function setupEventListeners() {
     });
   });
 
-  // Keyboard navigation (Escape closes modal, Arrows navigate flyer)
+  // Keyboard navigation (Escape closes active modals)
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       document.querySelectorAll(".modal-overlay.active").forEach(m => closeModal(m.id));
-    } else if (e.key === "ArrowRight") {
-      if (document.getElementById("flyerModal").classList.contains("active")) {
-        currentLang === "ar" ? prevFlyerPage() : nextFlyerPage();
-      }
-    } else if (e.key === "ArrowLeft") {
-      if (document.getElementById("flyerModal").classList.contains("active")) {
-        currentLang === "ar" ? nextFlyerPage() : prevFlyerPage();
-      }
     }
   });
 
@@ -1846,7 +1806,6 @@ function applyLanguage(lang) {
   renderBranchRadioList();
   updateBranchDisplay();
   updateCartUI();
-  updateFlyerLightboxUI();
 }
 
 function toggleLanguage() {
@@ -2108,7 +2067,11 @@ function saveCart() {
 
 function updateCartUI() {
   const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
-  const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const orderTypeRadio = document.querySelector("input[name='orderType']:checked");
+  const isDineIn = orderTypeRadio ? orderTypeRadio.value === "dine_in" : false;
+  const serviceCharge = (isDineIn && subtotal > 0) ? Math.round(subtotal * 0.12) : 0;
+  const finalTotal = subtotal + serviceCharge;
 
   // Header Cart Badge
   const badges = document.querySelectorAll(".cart-count-badge");
@@ -2125,7 +2088,7 @@ function updateCartUI() {
   if (floatBar && floatCount && floatTotal) {
     if (totalItems > 0) {
       floatCount.textContent = `${totalItems} ${I18N[currentLang].itemsCountSuffix}`;
-      floatTotal.textContent = `${totalPrice} ${I18N[currentLang].egp}`;
+      floatTotal.textContent = `${finalTotal} ${I18N[currentLang].egp}`;
       floatBar.classList.add("visible");
     } else {
       floatBar.classList.remove("visible");
@@ -2133,14 +2096,26 @@ function updateCartUI() {
   }
 
   // Modal Cart List
-  renderCartDrawerList(totalPrice);
+  renderCartDrawerList(subtotal, isDineIn, serviceCharge, finalTotal);
 }
 
-function renderCartDrawerList(totalPrice) {
+function renderCartDrawerList(subtotal, isDineIn, serviceCharge, finalTotal) {
   const listContainer = document.getElementById("cartItemsList");
   const totalAmountEl = document.getElementById("cartTotalAmount");
   if (totalAmountEl) {
-    totalAmountEl.textContent = `${totalPrice} ${I18N[currentLang].egp}`;
+    if (isDineIn && serviceCharge > 0) {
+      totalAmountEl.innerHTML = `
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 2px;">
+          ${I18N[currentLang].subtotalLabel} ${subtotal} ${I18N[currentLang].egp} + 
+          <span style="color: #ffd54f;">${serviceCharge} ${I18N[currentLang].egp} (${I18N[currentLang].hallServiceLabel})</span>
+        </div>
+        <div style="font-size: 1.35rem; font-weight: 900; color: #fff;">
+          ${finalTotal} ${I18N[currentLang].egp}
+        </div>
+      `;
+    } else {
+      totalAmountEl.textContent = `${finalTotal} ${I18N[currentLang].egp}`;
+    }
   }
 
   if (!listContainer) return;
@@ -2204,18 +2179,21 @@ function handleOrderTypeChange(type) {
   const addressOrTableLabel = document.getElementById("addressOrTableLabel");
   const addressOrTableInput = document.getElementById("orderCustomerAddressOrTable");
 
-  if (!addressOrTableGroup || !addressOrTableLabel || !addressOrTableInput) return;
-
-  if (type === "dine_in") {
-    addressOrTableLabel.textContent = currentLang === "ar" ? "رقم الطاولة في الصالة:" : "Dine-in Table Number:";
-    addressOrTableInput.placeholder = I18N[currentLang].placeholderTable;
-  } else if (type === "pickup") {
-    addressOrTableLabel.textContent = currentLang === "ar" ? "ملاحظات الاستلام من الفرع:" : "Takeaway Pickup Notes:";
-    addressOrTableInput.placeholder = currentLang === "ar" ? "مثال: استلام الساعة 8:00 مساءً" : "e.g. Pickup at 8:00 PM";
-  } else {
-    addressOrTableLabel.textContent = I18N[currentLang].customerAddressOrTable;
-    addressOrTableInput.placeholder = I18N[currentLang].placeholderAddress;
+  if (addressOrTableGroup && addressOrTableLabel && addressOrTableInput) {
+    if (type === "dine_in") {
+      addressOrTableLabel.textContent = currentLang === "ar" ? "رقم الطاولة في الصالة:" : "Dine-in Table Number:";
+      addressOrTableInput.placeholder = I18N[currentLang].placeholderTable;
+    } else if (type === "pickup") {
+      addressOrTableLabel.textContent = currentLang === "ar" ? "ملاحظات الاستلام من الفرع:" : "Takeaway Pickup Notes:";
+      addressOrTableInput.placeholder = currentLang === "ar" ? "مثال: استلام الساعة 8:00 مساءً" : "e.g. Pickup at 8:00 PM";
+    } else {
+      addressOrTableLabel.textContent = I18N[currentLang].customerAddressOrTable;
+      addressOrTableInput.placeholder = I18N[currentLang].placeholderAddress;
+    }
   }
+
+  // Live recalculate cart total with 12% hall service if dine-in
+  updateCartUI();
 }
 
 // WhatsApp Order Formatting & Dispatch
@@ -2251,12 +2229,15 @@ function sendOrderWhatsApp() {
 
   const branchName = currentLang === "ar" ? selectedBranch.nameAr : selectedBranch.nameEn;
   const orderTypeLabel = orderType === "dine_in" 
-    ? (currentLang === "ar" ? "تناول في الصالة 🍨" : "Dine-in Table 🍨") 
+    ? (currentLang === "ar" ? "تناول في الصالة (خدمة 12%) 🍨" : "Dine-in Table (12% Service) 🍨") 
     : orderType === "pickup" 
     ? (currentLang === "ar" ? "استلام من المطعم (تيك أواي) 🛍️" : "Takeaway / Pickup 🛍️") 
     : (currentLang === "ar" ? "توصيل للمنزل 🛵" : "Home Delivery 🛵");
 
-  const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const isDineIn = orderType === "dine_in";
+  const serviceCharge = (isDineIn && subtotal > 0) ? Math.round(subtotal * 0.12) : 0;
+  const finalTotal = subtotal + serviceCharge;
 
   // Build Itemized WhatsApp Message
   let msg = `💖 *طلب جديد - LOVE RECIPES (LR)* 🍧\n`;
@@ -2285,7 +2266,13 @@ function sendOrderWhatsApp() {
   });
 
   msg += `━━━━━━━━━━━━━━━━━━━━━━\n`;
-  msg += `💰 *الإجمالي النهائي: ${totalAmount} ج.م*\n`;
+  if (isDineIn && serviceCharge > 0) {
+    msg += `💵 *المجموع الفرعي:* ${subtotal} ج.م\n`;
+    msg += `🍨 *خدمة الصالة (12%):* +${serviceCharge} ج.م\n`;
+    msg += `💰 *الإجمالي النهائي (شامل خدمة الصالة 12%):* ${finalTotal} ج.م\n`;
+  } else {
+    msg += `💰 *الإجمالي النهائي:* ${finalTotal} ج.م\n`;
+  }
   msg += `━━━━━━━━━━━━━━━━━━━━━━\n`;
   msg += `✨ *تم الإرسال عبر المنيو الإلكتروني الرسمي لـ Love Recipes*\n`;
   msg += `🌐 ${GITHUB_PAGES_URL}`;
@@ -2477,80 +2464,6 @@ function copyMenuLink() {
   }).catch(() => {
     prompt(I18N[currentLang].copyLink, url);
   });
-}
-
-// Flyer Modal Lightbox (15 Scans)
-function initFlyerLightbox() {
-  updateFlyerLightboxUI();
-}
-
-function filterFlyerTabs(cat) {
-  currentFlyerCat = cat;
-  document.querySelectorAll(".flyer-tab-btn").forEach(btn => {
-    if (btn.getAttribute("data-flyer-cat") === cat) {
-      btn.classList.add("active");
-    } else {
-      btn.classList.remove("active");
-    }
-  });
-
-  const availablePages = getFilteredFlyerPages();
-  if (availablePages.length > 0) {
-    currentFlyerPage = FLYER_PAGES.indexOf(availablePages[0]);
-  }
-  updateFlyerLightboxUI();
-}
-
-function getFilteredFlyerPages() {
-  if (currentFlyerCat === "all") return FLYER_PAGES;
-  return FLYER_PAGES.filter(p => p.cat === currentFlyerCat);
-}
-
-function updateFlyerLightboxUI() {
-  const mainImg = document.getElementById("flyerMainImg");
-  const pageTitle = document.getElementById("flyerPageTitle");
-  const pageCounter = document.getElementById("flyerPageCounter");
-  const thumbsStrip = document.getElementById("flyerThumbsStrip");
-
-  if (!mainImg || !FLYER_PAGES[currentFlyerPage]) return;
-
-  const current = FLYER_PAGES[currentFlyerPage];
-  mainImg.src = current.src;
-  mainImg.alt = currentLang === "ar" ? current.titleAr : current.titleEn;
-
-  if (pageTitle) {
-    pageTitle.textContent = currentLang === "ar" ? current.titleAr : current.titleEn;
-  }
-
-  if (pageCounter) {
-    pageCounter.textContent = `${currentFlyerPage + 1} / ${FLYER_PAGES.length}`;
-  }
-
-  if (thumbsStrip) {
-    thumbsStrip.innerHTML = FLYER_PAGES.map((page, idx) => {
-      const isActive = idx === currentFlyerPage ? "active" : "";
-      return `
-        <div class="flyer-thumb ${isActive}" onclick="goToFlyerPage(${idx})">
-          <img src="${page.src}" alt="Page ${idx + 1}" loading="lazy">
-        </div>
-      `;
-    }).join("");
-  }
-}
-
-function goToFlyerPage(idx) {
-  currentFlyerPage = idx;
-  updateFlyerLightboxUI();
-}
-
-function prevFlyerPage() {
-  currentFlyerPage = (currentFlyerPage - 1 + FLYER_PAGES.length) % FLYER_PAGES.length;
-  updateFlyerLightboxUI();
-}
-
-function nextFlyerPage() {
-  currentFlyerPage = (currentFlyerPage + 1) % FLYER_PAGES.length;
-  updateFlyerLightboxUI();
 }
 
 // Generic Modal Controller

@@ -127,13 +127,6 @@
           <span data-i18n="ctaMenu">تصفح المنيو اللذيذ</span>
         </a>
 
-        <button class="cta-btn secondary" data-open-modal="flyerModal">
-          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          <span data-i18n="ctaFlyer">عرض البروشور والمنيو الأصلي (15 صفحة)</span>
-        </button>
-
         <a href="#branchesSection" class="cta-btn secondary">
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -146,7 +139,7 @@
       <!-- Service Note Banner -->
       <div class="service-notice-banner">
         <span>⭐</span>
-        <span data-i18n="serviceNotice">جميع الأصناف تحضر طازجة من مكونات طبيعية 100% - أسعار شاملة ضريبة القيمة المضافة.</span>
+        <span data-i18n="serviceNotice">يضاف 12% خدمة داخل الصالة - جميع الأسعار شاملة ضريبة القيمة المضافة.</span>
       </div>
     </div>
   </section>
@@ -264,7 +257,7 @@
             <label class="order-type-tab-label">
               <input type="radio" name="orderType" value="dine_in">
               <span>🍨</span>
-              <span data-i18n="orderTypeDineIn">صالة / طاولة</span>
+              <span data-i18n="orderTypeDineIn">صالة / طاولة (خدمة 12%)</span>
             </label>
           </div>
         </div>
@@ -409,61 +402,7 @@
     </div>
   </div>
 
-  <!-- ==================== MODAL: ORIGINAL MENU FLYER LIGHTBOX (15 PAGES) ==================== -->
-  <div class="modal-overlay" id="flyerModal">
-    <div class="modal-card wide">
-      <div class="modal-header">
-        <h3>
-          <span>📄</span>
-          <span data-i18n="flyerModalTitle">منيو وبروشور Love Recipes الأصلي المطبوع (15 صفحة)</span>
-        </h3>
-        <button class="modal-close-btn" data-close-modal="flyerModal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <!-- Category Filter Tabs -->
-        <div class="flyer-tabs-row">
-          <button type="button" class="flyer-tab-btn active" data-flyer-cat="all" onclick="filterFlyerTabs('all')" data-i18n="flyerTabAll">
-            جميع الصفحات (15 صفحة)
-          </button>
-          <button type="button" class="flyer-tab-btn" data-flyer-cat="icecream" onclick="filterFlyerTabs('icecream')" data-i18n="flyerTabIceCream">
-            الآيس كريم والصنداي والتشيز كيك
-          </button>
-          <button type="button" class="flyer-tab-btn" data-flyer-cat="boba" onclick="filterFlyerTabs('boba')" data-i18n="flyerTabBoba">
-            البوبا والفرابيه والماتشا
-          </button>
-          <button type="button" class="flyer-tab-btn" data-flyer-cat="crepecake" onclick="filterFlyerTabs('crepecake')" data-i18n="flyerTabCrepeCake">
-            الكريب، البراونيز، كيكة دبي، والقشطوطة
-          </button>
-          <button type="button" class="flyer-tab-btn" data-flyer-cat="drinks" onclick="filterFlyerTabs('drinks')" data-i18n="flyerTabDrinks">
-            الميلك شيك، العصائر، والساخن
-          </button>
-          <button type="button" class="flyer-tab-btn" data-flyer-cat="cover" onclick="filterFlyerTabs('cover')" data-i18n="flyerTabCover">
-            الغلاف وأرقام التواصل والفرع
-          </button>
-        </div>
 
-        <!-- Main Lightbox Viewer -->
-        <div class="flyer-viewer-container">
-          <button type="button" class="flyer-nav-arrow prev" onclick="prevFlyerPage()" title="الصفحة السابقة">&lsaquo;</button>
-          <button type="button" class="flyer-nav-arrow next" onclick="nextFlyerPage()" title="الصفحة التالية">&rsaquo;</button>
-
-          <div class="flyer-main-image-wrap">
-            <img id="flyerMainImg" src="./assets/images/1.jpg" alt="بروشور منيو Love Recipes">
-          </div>
-
-          <div class="flyer-info-bar">
-            <span id="flyerPageTitle">غلاف Love Recipes، صنداي الآيس كريم، تشيز كيك، والفرع 6 أكتوبر</span>
-            <span id="flyerPageCounter">1 / 15</span>
-          </div>
-        </div>
-
-        <!-- Thumbnails Strip -->
-        <div class="flyer-thumbs-strip" id="flyerThumbsStrip">
-          <!-- Populated dynamically via app.js -->
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
